@@ -17,6 +17,7 @@ def get_problemsets():
     tasks = []
     for slug in os.listdir(PROBLEMS_DIR):
         tasks.append(get_problemset(slug))
+    tasks.sort(key = lambda task: task["position"])
     return tasks
 
     
