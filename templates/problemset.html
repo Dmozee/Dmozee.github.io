@@ -8,7 +8,9 @@
                 
                 <p>{{ problemset.description | safe }}</p>
                 
+                {% if problemset.theory %}
                 <p><a href="{{ problemset.theory }}" target="_blank" class="btn btn-primary">Теория</a></p>
+                {% endif %}
                 
                 <div class="list-group">
                     {% for problem in problemset.problems %}
