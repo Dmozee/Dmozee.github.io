@@ -4,7 +4,11 @@
         <div class="container">
 
             <div class="jumbotron">
-                <h3>{{ problemset.title }}</h3>
+                <h3 class="mb-3">{{ problemset.title }}</h3>
+                
+                <p>{{ problemset.description | safe }}</p>
+                
+                <p><a href="{{ problemset.theory }}" target="_blank" class="btn btn-primary">Теория</a></p>
                 
                 <div class="list-group">
                     {% for problem in problemset.problems %}
