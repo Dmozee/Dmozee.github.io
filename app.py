@@ -5,13 +5,17 @@ app = Flask(__name__)
 PROBLEMS_DIR = "problemsets/"
 
 
+def get_problemset(slug):
+    with open(os.path.join(PROBLEMS_DIR, slug)) as f:
+        task = yaml.load(f.read())
+        task["slug"] = slug.split(".")[0]
+        return task
+
+
 def get_problemsets():
     tasks = []
     for task_slug in os.listdir(PROBLEMS_DIR):
-        with open(os.path.join(PROBLEMS_DIR, task_slug)) as f:
-            task = yaml.load(f.read())
-            task["slug"] = task_slug.split(".")[0]
-            tasks.append(task)
+        tasks.append(get_problemset(slug))
     return tasks
 
     
