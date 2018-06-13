@@ -25,9 +25,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              {% for problemset in problemsets.problemset %}
+              {% for problemset in problemsets %}
               <li class="nav-item">
-                <a class="nav-link" href="/problems/{{problemset.title}}>{{problemset.title}}</a>
+                <a class="nav-link" href="/problems/{{ problemset.slug }}/">{{ problemset.title }}</a>
+                {# TODO: mark active menu item #}
               </li>
               {% endfor %}
             </ul>
