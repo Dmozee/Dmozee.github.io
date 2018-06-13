@@ -1,0 +1,17 @@
+title:       Массивы
+description: Динамические массивы — <code>vector</code>
+position:    4
+theory:      http://cppstudio.com/post/8453/
+problems:
+  - title: Линейный поиск
+    url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=5&id_topic=113&id_problem=691
+  - title: Контроперация
+    url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=5&id_topic=113&id_problem=694
+  - title: Налоги
+    url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=5&id_topic=113&id_problem=696
+  - title: Двойной переворот
+    url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=5&id_topic=114&id_problem=700
+  - title: Домашнее задание
+    url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=5&id_topic=114&id_problem=704
+  - title: Пересечение множеств
+    url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=5&id_topic=114&id_problem=706

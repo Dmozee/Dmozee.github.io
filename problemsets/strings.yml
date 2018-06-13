@@ -1,0 +1,15 @@
+title:       Строки
+description: Тип <code>string</code>, простые задачи
+position:    6
+theory:      http://cppstudio.com/post/437/
+problems:
+  - title: Клавиатура
+    url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=4&id_topic=39&id_problem=239
+  - title: Цветочки
+    url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=4&id_topic=39&id_problem=241
+  - title: Стрелки
+    url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=4&id_topic=39&id_problem=243
+  - title: Рунные слова
+    url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=4&id_topic=39&id_problem=244
+  - title: Золото племени АББА
+    url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=4&id_topic=39&id_problem=246
