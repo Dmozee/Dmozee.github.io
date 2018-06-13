@@ -36,5 +36,6 @@ def problemset(file):
     return render_template(
         "problemset.html",
         problemset=get_problemset(file + EXT),
-        problemsets=get_problemsets()
+        problemsets=get_problemsets(),
+        current=file
     )
