@@ -1,8 +1,9 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, abort
 import yaml, os
 
 app = Flask(__name__)
 PROBLEMS_DIR = "problemsets/"
+EXT = ".yml"
 
 
 def get_problemset(slug):
@@ -14,7 +15,7 @@ def get_problemset(slug):
 
 def get_problemsets():
     tasks = []
-    for task_slug in os.listdir(PROBLEMS_DIR):
+    for slug in os.listdir(PROBLEMS_DIR):
         tasks.append(get_problemset(slug))
     return tasks
 
@@ -22,3 +23,17 @@ def get_problemsets():
 @app.route("/")
 def main():
     return render_template("index.html", problemsets=get_problemsets())
+    
+
+@app.route("/problems/<file>/")
+def problemset(file):
+    if "." in file:
+        abort(403)
+    if not os.path.exists(os.path.join(PROBLEMS_DIR, file + EXT)):
+        abort(404)
+    
+    return render_template(
+        "problemset.html",
+        problemset=get_problemset(file + EXT),
+        problemsets=get_problemsets()
+    )
