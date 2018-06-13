@@ -3,15 +3,15 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
         <title>Летняя Школа 2018</title>
-        
+
         <link rel="icon" href="/static/favicon.ico" />
         <link rel="shortcut icon" href="/static/favicon.ico" />
-        
+
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" />
         <link href="/static/styles.css" rel="stylesheet" />
-        
+
         <!--[if lt IE 9]>
             <script src="/wp-content/themes/clear-theme/js/html5shiv.js"></script>
         <![endif]-->
@@ -25,11 +25,15 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-
+              {% for problemset in problemsets.problemset %}
+              <li class="nav-item">
+                <a class="nav-link" href="/problems/{{problemset.title}}>{{problemset.title}}</a>
+              </li>
+              {% endfor %}
             </ul>
           </div>
         </nav>
-        
+
         {% block main %}
         {% endblock %}
 
