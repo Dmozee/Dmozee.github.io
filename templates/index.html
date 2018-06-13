@@ -18,58 +18,15 @@
         </div>
         
         <div class="container cards-stackable">
+            {% for problemset in problemsets %}
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Hello World</h5>
-                    <p class="card-text">Знакомство с C++</p>
-                    <a href="hello.html" class="btn btn-primary">Задачи</a>
+                    <h5 class="card-title">{{ problemset.title }}</h5>
+                    <p class="card-text">{{ problemset.description }}</p>
+                    <a href="/problems/{{ problemset.slug }}/" class="btn btn-primary">Задачи</a>
                 </div>
             </div>
-            
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Условия</h5>
-                    <p class="card-text">Конструкции <code>if</code> — <code>else</code>, <code>switch</code></p>
-                    <p class="card-text"><a target="_blank" href="http://cppstudio.com/post/291/">Теория</a></p>
-                    <a href="ifs.html" class="btn btn-primary">Задачи</a>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Циклы</h5>
-                    <p class="card-text">Операторы <code>for</code> и <code>while</code></p>
-                    <p class="card-text"><a target="_blank" href="http://cppstudio.com/post/348/">Теория</a></p>
-                    <a href="cycles.html" class="btn btn-primary">Задачи</a>
-                </div>
-            </div>
-        
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Массивы</h5>
-                    <p class="card-text">Динамические массивы — <code>vector</code></p>
-                    <p class="card-text"><a target="_blank" href="http://cppstudio.com/post/8453/">Теория</a></p>
-                    <a href="arrays.html" class="btn btn-primary">Задачи</a>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Символы</h5>
-                    <p class="card-text">Тип <code>char</code>, работа с символами</p>
-                    <p class="card-text"><a target="_blank" href="http://cppstudio.com/post/437/">Теория</a></p>
-                    <a href="symbols.html" class="btn btn-primary">Задачи</a>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Строки</h5>
-                    <p class="card-text">Тип <code>string</code>, простые задачи</p>
-                    <p class="card-text"><a target="_blank" href="http://cppstudio.com/post/437/">Теория</a></p>
-                    <a href="strings.html" class="btn btn-primary">Задачи</a>
-                </div>
-            </div>
+            {% endfor %}
         </div>
 
 {% endblock %}
