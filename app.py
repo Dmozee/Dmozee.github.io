@@ -1,8 +1,6 @@
 from flask import Flask, render_template, abort
 import yaml, os
-import sys
 
-sys.setdefaultencoding("utf8")
 app = Flask(__name__)
 PROBLEMS_DIR = "problemsets/"
 EXT = ".yml"
