@@ -22,7 +22,10 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">{{ problemset.title }}</h5>
-                    <p class="card-text">{{ problemset.description }}</p>
+                    <p class="card-text">{{ problemset.description | safe }}</p>
+                    {% if problemset.theory %}
+                    <p class="card-text"><a href="{{ problemset.theory }}" target="_blank">Теория</a></p>
+                    {% endif %}
                     <a href="/problems/{{ problemset.slug }}/" class="btn btn-primary">Задачи</a>
                 </div>
             </div>

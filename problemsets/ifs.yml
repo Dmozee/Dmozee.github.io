@@ -1,0 +1,17 @@
+title:       Условия
+description: Конструкции <code>if</code> — <code>else</code>, <code>switch</code>
+position:    2
+theory:      http://cppstudio.com/post/291/
+problems:
+    - title: Больше–меньше
+      url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=2&id_topic=29&id_problem=162
+    - title: Четырехзначный палиндром
+      url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=2&id_topic=29&id_problem=275
+    - title: Две окружности
+      url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=2&id_topic=31&id_problem=173
+    - title: Конь
+      url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=2&id_topic=30&id_problem=188
+    - title: Коробки
+      url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=2&id_topic=31&id_problem=1216
+    - title: Лиса Алиса и кот Базилио
+      url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=2&id_topic=32&id_problem=176
