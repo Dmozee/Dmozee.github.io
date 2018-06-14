@@ -20,11 +20,11 @@ def get_problemsets():
     tasks.sort(key = lambda task: task["position"])
     return tasks
 
-    
+
 @app.route("/")
 def main():
     return render_template("index.html", problemsets=get_problemsets())
-    
+
 
 @app.route("/problems/<file>/")
 def problemset(file):
@@ -32,7 +32,7 @@ def problemset(file):
         abort(403)
     if not os.path.exists(os.path.join(PROBLEMS_DIR, file + EXT)):
         abort(404)
-    
+
     return render_template(
         "problemset.html",
         problemset=get_problemset(file + EXT),
