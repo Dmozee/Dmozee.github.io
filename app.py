@@ -10,6 +10,10 @@ def get_problemset(slug):
     with open(os.path.join(PROBLEMS_DIR, slug)) as f:
         task = yaml.load(f.read())
         task["slug"] = slug.split(".")[0]
+        k =0
+        for problem in task.problem:
+            problem['index'] = chr(int('A') + k)
+            k+=1    
         return task
 
 
