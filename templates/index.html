@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block main %}
+        <div class="container">
+
+            <div class="jumbotron">
+                <p>Наша цель — подготовиться к олимпиадам</p>
+                <p>Меня зовут Данил, можно обращаться на «ты»</p>
+                <p>Можно свободно общаться друг с другом, хотя важно решать задачи самостоятельно</p>
+                <p>Можно искать и читать поясняющие статьи в интернете, но не стоит пользоваться найденным в интернете кодом</p>
+                <p>Если что-то непонятно — спроси у соседа, подними руку или подойди к Данилу</p>
+                
+                <h3 class="mb-3">После ЛШ занимайся тут</h3>
+                <p><a target="_blank" href="https://stepik.org/course/363">Курс по C++ от Яндекса</a></p>
+                <p><a target="_blank" href="http://acm.timus.ru/">Хороший архив задач по информатике</a></p>
+                <p><a target="_blank" href="https://algoprog.ru/">Курс по олимпиадному программированию</a></p> 
+            </div>
+        </div>
+        
+        <div class="container cards-stackable">
+            {% for problemset in problemsets %}
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ problemset.title }}</h5>
+                    <p class="card-text">{{ problemset.description | safe }}</p>
+                    {% if problemset.theory %}
+                    <p class="card-text"><a href="{{ problemset.theory }}" target="_blank">Теория</a></p>
+                    {% endif %}
+                    <a href="/problems/{{ problemset.slug }}/" class="btn btn-primary">Задачи</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+{% endblock %}

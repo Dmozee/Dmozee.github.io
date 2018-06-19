@@ -1,0 +1,21 @@
+body {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+@media screen and (min-width: 400px) {
+    .cards-stackable {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-gap: 20px;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    .card {
+        box-sizing: border-box;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,17 @@
+title:       Циклы
+description: Операторы <code>for</code> и <code>while</code>
+position:    3
+theory:      http://cppstudio.com/post/348/
+problems:
+  - title: Монетки
+    url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=3&id_topic=33&id_problem=190
+  - title: Перепись
+    url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=3&id_topic=33&id_problem=194
+  - title: Уравнение
+    url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=3&id_topic=33&id_problem=202
+  - title: Степень двойки
+    url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=3&id_topic=34&id_problem=206
+  - title: Числа Фибоначчи
+    url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=3&id_topic=34&id_problem=208
+  - title: Сумма максимума и минимума
+    url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=3&id_topic=34&id_problem=611

@@ -1,0 +1,17 @@
+title:       bfs
+description: Несложные задачи на графы.
+position:    7
+theory:     http://www.e-maxx-ru.1gb.ru/algo/bfs
+problems:
+  - title: Путь
+    url:   http://acmp.ru/asp/do/index.asp?main=task&id_course=2&id_section=21&id_topic=51&id_problem=649
+  - title: Один конь
+    url:   http://acmp.ru/asp/do/index.asp?main=task&id_course=2&id_section=21&id_topic=51&id_problem=664
+  - title: Грядки
+    url:   http://acmp.ru/asp/do/index.asp?main=task&id_course=2&id_section=21&id_topic=51&id_problem=651
+  - title: Игра Jammed
+    url:   http://acmp.ru/asp/do/index.asp?main=task&id_course=2&id_section=21&id_topic=51&id_problem=657
+  - title: Lines - 2
+    url:   http://acmp.ru/asp/do/index.asp?main=task&id_course=2&id_section=21&id_topic=51&id_problem=659
+  - title: Ладья в лабиринте
+    url:   http://acmp.ru/asp/do/index.asp?main=task&id_course=2&id_section=21&id_topic=51&id_problem=1012

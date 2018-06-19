@@ -1,0 +1,15 @@
+title:       dfs
+description: Несложные задачи на графы.
+position:    7
+theory:     http://www.e-maxx-ru.1gb.ru/algo/dfs
+problems:
+  - title: Производство деталей
+    url:   http://acmp.ru/asp/do/index.asp?main=task&id_course=2&id_section=21&id_topic=50&id_problem=646
+  - title: Рекурсия
+    url:   http://acmp.ru/asp/do/index.asp?main=task&id_course=2&id_section=21&id_topic=50&id_problem=644
+  - title: Покраска лабиринта
+    url:   http://acmp.ru/asp/do/index.asp?main=task&id_course=2&id_section=21&id_topic=50&id_problem=1010
+  - title: Компоненты связности
+    url:   http://acmp.ru/asp/do/index.asp?main=task&id_course=2&id_section=21&id_topic=50&id_problem=1004
+  - title: Друзья
+    url:   http://acmp.ru/asp/do/index.asp?main=task&id_course=2&id_section=21&id_topic=50&id_problem=637

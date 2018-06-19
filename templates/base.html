@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Летняя Школа 2018</title>
+
+        <link rel="icon" href="/static/favicon.ico" />
+        <link rel="shortcut icon" href="/static/favicon.ico" />
+
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="/static/styles.css" rel="stylesheet" />
+
+        <!--[if lt IE 9]>
+            <script src="/wp-content/themes/clear-theme/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+          <a class="navbar-brand active" href="/">Летняя Школа 2018</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              {% for problemset in problemsets %}
+              <li class="nav-item {% if current == problemset.slug %}active{% endif %}">
+                <a class="nav-link" href="/problems/{{ problemset.slug }}/">{{ problemset.title }}</a>
+                {# TODO: mark active menu item #}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </nav>
+
+        {% block main %}
+        {% endblock %}
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    </body>
+</html>

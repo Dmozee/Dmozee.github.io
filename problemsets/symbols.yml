@@ -1,0 +1,17 @@
+title:       Символы
+description: Тип <code>char</code> работа с символами
+position:    5
+theory:      http://cppstudio.com/post/437/
+problems:
+  - title: Цифра
+    url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=4&id_topic=38&id_problem=247 
+  - title: Смена регистра
+    url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=4&id_topic=38&id_problem=249 
+  - title: Простой шифр
+    url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=4&id_topic=38&id_problem=1197
+  - title: Кругляши
+    url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=4&id_topic=38&id_problem=253 
+  - title: Нули
+    url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=4&id_topic=38&id_problem=255 
+  - title: Уравнение для 5 класса!
+    url:   https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=4&id_topic=38&id_problem=258 

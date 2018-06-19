@@ -1,2 +1,3 @@
-# Dmozee.github.io
-Site for Summer School
+# Summer School 2018
+
+Easy web app for Summer School
