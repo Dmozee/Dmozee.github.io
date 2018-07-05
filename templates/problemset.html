@@ -13,8 +13,8 @@
                 {% endif %}
 
                 <div class="list-group">
-                    {% for problem in problemset.problems %}
-                    <a target="_blank" href="{{ problem.url }}"  class="list-group-item list-group-item-action">{{ problem.title }}</a>
+                    {% for i, problem in problems %}
+                    <a target="_blank" href="{{ problem.url }}"  class="list-group-item list-group-item-action"> {{ i }} {{ problem.title }}</a>
                     {% endfor %}
                 </div>
             </div>

@@ -20,6 +20,8 @@ def get_problemsets():
     tasks.sort(key = lambda task: task["position"])
     return tasks
 
+def indexate(lst):
+    return [ (chr(ord('A') + i), lst[i]) for i in range(len(lst)) ]
 
 @app.route("/")
 def main():
@@ -35,7 +37,8 @@ def problemset(file):
 
     return render_template(
         "problemset.html",
-        problemset=get_problemset(file + EXT),
+        problemset=get_problemset(file + EXT,
+        problems=indexate(get_problemset(file + EXT).problems),
         problemsets=get_problemsets(),
         current=file
     )
